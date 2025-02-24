@@ -1,0 +1,52 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: [
+        './src/**/*.{js,ts,jsx,tsx}',
+        './src/**/*.{js,ts,jsx,tsx}',
+    ],
+    safelist: [
+    "text-green-700",
+    "bg-green-700",
+    "text-blue-700",
+    "bg-blue-700",
+    "text-yellow-700",
+    "bg-yellow-700",
+    "text-amber-700",
+    "bg-amber-700",
+    "text-pink-700",
+    "bg-pink-700",
+    "text-pink-400",
+    "bg-pink-400",
+    "text-red-700",
+    "bg-red-700",
+    "text-neutral-700",
+    "bg-neutral-700",
+    "text-cyan-700",
+    "bg-cyan-700",
+    "text-purple-700",
+    "bg-purple-700",
+    "text-orange-700",
+    "bg-orange-700",
+    "text-indigo-700",
+    "bg-indigo-700",
+    ],
+    theme: {
+        extend: {
+            fontFamily: {
+                roboto: ['Roboto', 'sans-serif'],
+                oswald: ['Oswald', 'sans-serif'],
+                raleway: ['Raleway', 'sans-serif'],
+                lato: ['Lato', 'sans-serif'],
+                quicksand: ['Quicksand', 'sans-serif'],
+                firaCode: ['Fira Code', 'sans-serif'],
+            },
+            colors: {
+                background: 'var(--background)',
+                foreground: 'var(--foreground)',
+                primary: 'var(--primary)',
+                secondary: 'var(--secondary)',
+            },
+        },
+    },
+    plugins: [],
+};

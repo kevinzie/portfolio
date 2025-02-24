@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Senior Software Engineer",
+    "company": "ElectGo",
+    "date_start": "September 2023",
+    "date_end": "Present",
+    "color": "text-blue-700",
+    "background": "bg-blue-700",
+    "description": "Enhancing customer checkout, warehouse management, and payment gateway integrations."
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Halosis",
+    "date_start": "September 2022",
+    "date_end": "November 2023",
+    "color": "text-green-700",
+    "background": "bg-green-700",
+    "description": "Developed real-time chat applications and automated customer support systems."
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "Emkalab",
+    "date_start": "August 2019",
+    "date_end": "November 2023",
+    "color": "text-purple-700",
+    "background": "bg-purple-700",
+    "description": "Led 30+ projects, improving system performance and optimizing workflows."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "RajaMobil.com",
+    "date_start": "April 2022",
+    "date_end": "August 2022",
+    "color": "text-yellow-700",
+    "background": "bg-yellow-700",
+    "description": "Developed scalable backend services and cross-platform applications."
+  },
+  {
+    "title": "Magento Developer",
+    "company": "Kemana.com",
+    "date_start": "January 2018",
+    "date_end": "December 2018",
+    "color": "text-red-700",
+    "background": "bg-red-700",
+    "description": "Developed custom Magento modules and improved e-commerce functionality."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Zi.Care",
+    "date_start": "Jun 2017",
+    "date_end": "Jan 2018",
+    "color": "text-orange-700",
+    "background": "bg-orange-700",
+    "description": "Built healthcare dashboards and integrated BPJS and INACBG systems."
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Vamosh Group",
+    "date_start": "Oct 2013",
+    "date_end": "Oct 2016",
+    "color": "text-orange-700",
+    "background": "bg-orange-700",
+    "description": "Responsible for web development, optimizing SEO & SEM strategies, and managing digital marketing campaigns across Facebook, Twitter, and Instagram."
+  }
+]

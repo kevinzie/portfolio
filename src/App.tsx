@@ -1,25 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import MainLayout from "./layouts/MainLayout";
+import Hero from "./components/Hero";
+import LottieTech from "./assets/images/bg-2.png"
+import SectionPortfolio from "./components/SectionPortfolio";
+import SectionExperience from "./components/SectionExperience";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <MainLayout>
+        <Hero title={'Software'} subtitle={'Engineer'} name={'Denny Ferdiansyah // since 2013'}
+        backgroundImage={LottieTech} backgroundWidth={700} backgroundHeight={700}/>
+        <SectionExperience />
+        <SectionPortfolio heading={'My Works'}/>
+    </MainLayout>
   );
 }
 
