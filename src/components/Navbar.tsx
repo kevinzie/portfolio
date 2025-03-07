@@ -1,5 +1,6 @@
-import {useEffect, useState} from "react";
+import React, {useEffect, useState} from "react";
 import {Icon} from "@iconify/react";
+import {TypeAnimation} from "react-type-animation";
 
 interface MenuItem {
     id: number;
@@ -10,6 +11,7 @@ interface MenuItem {
 
 export default function Navbar() {
     const [menu, setMenu] = useState<MenuItem[]>([]);
+    const [textColor, setTextColor] = useState('white');
     useEffect(() => {
         import('../assets/menu.json')
             .then((module) => {
@@ -18,10 +20,43 @@ export default function Navbar() {
             .catch((err) => console.error('Error loading the menu', err));
     }, []);
     return (
-        <header className="relative flex w-full  text-white py-4 font-firaCode">
+        <header className="fixed top-0 z-50 bg-black bg-opacity-10 backdrop-blur-md flex w-full  text-white py-1 font-firaCode">
             <div className="container mx-auto flex justify-between items-center">
-                <div className="font-bold font-firaCode">
-                    <a href="/" title={'Denny Ferdiansyah'} className={'bg-white rounded-md bg-opacity-90 text-4xl text-black'}>DF</a>
+                <div className="font-bold font-quicksand ">
+                    <a href="/" title={'Denny Ferdiansyah'} className={'flex flex-col gap-0 items-start rounded-md bg-opacity-90 text-2xl '}>
+                        <span className={'bg-gradient-to-r font-bold from-yellow-400 to-pink-500 text-transparent bg-clip-text'}>Denny Ferdiansyah</span>
+                        <span className={'text-sm'} style={{
+                            color: textColor,
+                        }}>
+                            <TypeAnimation
+                                sequence={[
+                                    () => setTextColor('white'),
+                                    `Senior Software Engineer`, 500,
+                                    () => setTextColor('cyan'),
+                                    `GoLang`, 500,
+                                    () => setTextColor('yellow'),
+                                    `Javascript`, 500,
+                                    () => setTextColor('lightblue'),
+                                    `TypeScript`, 500,
+                                    () => setTextColor('orange'),
+                                    `Magento`, 500,
+                                    () => setTextColor('cyan'),
+                                    `Wordpress`, 500,
+                                    () => setTextColor('lightblue'),
+                                    `ReactJS`, 500,
+                                    () => setTextColor('white'),
+                                    `NextJS`, 500,
+                                    () => setTextColor('lightgreen'),
+                                    `VueJS`, 500,
+                                    () => setTextColor('green'),
+                                    `NuxtJS`, 500,
+                                    () => setTextColor('white'),
+                                ]}
+                                deletionSpeed={90}
+                                repeat={Infinity}
+                            />
+                        </span>
+                    </a>
                 </div>
                 <nav>
                     <ul className="flex space-x-6 items-center">

@@ -7,8 +7,8 @@ export default function MainLayout({ children }: { children: ReactNode }) {
         <div className="min-h-screen flex flex-col">
             <Navbar />
             <main className="flex-grow">{children}</main>
-            <footer id={'contact'} className="bg-black border-t max-w-4xl mx-auto border-neutral-900 py-20">
-                <div className={'container relative mx-auto text-center flex gap-4 flex-col items-center'}>
+            <footer id={'contact'} className="bg-black border-t w-full  mx-auto border-neutral-900 py-20">
+                <div className={'container max-w-4xl relative mx-auto text-center flex gap-4 flex-col items-center'}>
                     <div className={'relative flex flex-col items-center w-20 h-20 rounded-full overflow-hidden'}>
                         <img src={'/assets/images/profile/me.jpeg'} />
                     </div>
